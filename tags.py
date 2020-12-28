@@ -11,7 +11,7 @@ lines = list(set(lines))
 
 with open('tags.txt', 'w') as f:
     for line in lines:
-        f.writeline(line)
+        f.writelines(line+'\n')
 
 # shuffle
 random.shuffle(lines)
